@@ -1,0 +1,961 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Byeonghui Jeong</title>
+    <meta name="author" content="Byeonghui Jeong">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+
+<body>
+<table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tbody>
+    <tr style="padding:0px">
+        <td style="padding:0px">
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody>
+                <tr style="padding:0px">
+                    <td style="padding:2.5%;width:37%;max-width:37%;text-align:center;vertical-align:middle">
+                        <div class="profile-carousel">
+                            <img id="profile-photo" class="profile-photo hoverZoomLink" alt="profile photo" src="images/me_1.jpg">
+                            <div class="profile-controls">
+                                <button type="button" class="profile-nav-btn" onclick="prevProfilePhoto()">&#10094;</button>
+                                <span id="profile-dot-0" class="profile-dot active"
+                                      onclick="showProfilePhoto(0)"></span>
+                                <span id="profile-dot-1" class="profile-dot" onclick="showProfilePhoto(1)"></span>
+                                <button type="button" class="profile-nav-btn" onclick="nextProfilePhoto()">&#10095;</button>
+                            </div>
+                        </div>
+                    </td>
+                    <td style="padding:2.5%;width:63%;vertical-align:middle">
+                        <p class="name" style="text-align: center;">Byeonghui Jeong</p>
+                        <p>
+                            Hello! I am Byeonghui Jeong, a Ph.D. candidate at <a href="https://www.dongguk.edu/">Dongguk University</a> and a member of the <a href="https://ucloud-lab.dongguk.edu">uCloud Computing Lab</a>.
+                            I investigate how cloud-native services can remain efficient, reliable, and secure under dynamic and uncertain workloads.
+                            Specifically, I focus on elastic systems for containerized microservices, with an emphasis on autoscaling, resource management, and workload uncertainty modeling.
+                            Ultimately, my goal is to improve resource utilization and service stability by enabling systems to adapt automatically to runtime demand variations.
+                            More recently, I have extended this research toward securing elastic systems against attacks that exploit autoscaling mechanisms.
+                        </p>
+                        <p style="text-align:center">
+                            <a href="mailto:qudgml6323@dgu.ac.kr">Email</a> &nbsp;/&nbsp;
+                            <a href="https://scholar.google.co.kr/citations?user=jNqR0jMAAAAJ">Google Scholar</a> &nbsp;/&nbsp;
+                            <a href="https://www.researchgate.net/profile/Byeonghui-Jeong">ResearchGate</a> &nbsp;/&nbsp;
+                            <a href="https://orcid.org/0000-0001-8054-0223">ORCID</a> &nbsp;/&nbsp;
+                            <a href="https://github.com/bh-jeong/">GitHub</a>
+                        </p>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- News -->
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody>
+                <tr>
+                    <td style="padding:16px;width:100%;vertical-align:middle">
+                        <h2>News</h2>
+                        <ul style="padding-left:18px; margin-left:0px;">
+                            <li><strong>Jul. 2025</strong> <a href="https://doi.org/10.1016/j.cosrev.2025.100791"><em>Autoscaling survey</em></a> accepted for publication in <em>Computer Science Review</em>.</li>
+                            <li><strong>Dec. 2024</strong> <a href="https://doi.org/10.1109/TSC.2024.3522815"><em>ARAScaler</em></a> accepted for publication in <em>IEEE Transactions on Services Computing</em>.</li>
+                            <li><strong>Aug. 2024</strong> Received the Best Research Award from Dongguk University.</li>
+                            <li><strong>Apr. 2024</strong> Received the Best Paper Award at MUE 2024.</li>
+                            <li><strong>Jan. 2024</strong> <a href="https://doi.org/10.1109/TIFS.2024.3350379"><em>Mal3S</em></a> accepted for publication in <em>IEEE Transactions on Information Forensics and Security</em>.</li>
+                            <li><strong>Sep. 2023</strong> <a href="https://doi.org/10.1109/TCE.2023.3320174"><em>IReS</em></a> accepted for publication in <em>IEEE Transactions on Consumer Electronics</em>.</li>
+                            <li><strong>Jul. 2023</strong> <a href="https://doi.org/10.1109/TCC.2023.3292378"><em>HiPerRM</em></a> accepted for publication in <em>IEEE Transactions on Cloud Computing</em>.</li>
+                            <li><strong>Nov. 2022</strong> <a href="https://doi.org/10.1016/j.neucom.2022.11.089"><em>ProHPA</em></a> accepted for publication in <em>Neurocomputing</em>.</li>
+                            <li><strong>Oct. 2021</strong> <a href="https://doi.org/10.1109/TII.2021.3119778"><em>HyMalD</em></a> accepted for publication in <em>IEEE Transactions on Industrial Informatics</em>.</li>
+                        </ul>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- Education -->
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody>
+                <tr>
+                    <td style="padding:16px;width:100%;vertical-align:middle">
+                        <h2>Education</h2>
+                        <table style="width:100%;border:0px;border-spacing:0px 14px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                            <tbody>
+                            <tr>
+                                <td style="padding:0px;width:24%;vertical-align:top;color:#666;white-space:nowrap;">Mar. 2023 – Present</td>
+                                <td style="padding:0px;width:76%;vertical-align:top;">
+                                    <strong>Ph.D. Candidate</strong><br>
+                                    <a href="https://cs.dongguk.edu/main">Computer Science and Artificial Intelligence</a>, Dongguk University, Seoul, Korea<br>
+                                    Advisor: Prof. <a href="https://scholar.google.co.kr/citations?hl=ko&user=3HBZickAAAAJ">Young-Sik Jeong</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding:0px;width:24%;vertical-align:top;color:#666;white-space:nowrap;">Mar. 2021 – Feb. 2023</td>
+                                <td style="padding:0px;width:76%;vertical-align:top;">
+                                    <strong>M.S.</strong><br>
+                                    <a href="https://mme.dongguk.edu/main">Multimedia Engineering</a>, Dongguk University, Seoul, Korea<br>
+                                    Advisor: Prof. <a href="https://scholar.google.co.kr/citations?hl=ko&user=3HBZickAAAAJ">Young-Sik Jeong</a><br>
+                                    Thesis: <a href="https://www.riss.kr/link?id=T16623297"><em>Container Resource Management based on SCINet for High-Performance Cloud Computing</em></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding:0px;width:24%;vertical-align:top;color:#666;white-space:nowrap;">Mar. 2015 – Feb. 2021</td>
+                                <td style="padding:0px;width:76%;vertical-align:top;">
+                                    <strong>B.S.</strong><br>
+                                    <a href="https://sw.kongju.ac.kr/">Computer Science and Engineering</a>, Kongju National University, Cheonan, Korea
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- Work Experiences -->
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody>
+                <tr>
+                    <td style="padding:16px;width:100%;vertical-align:middle">
+                        <h2>Work Experiences</h2>
+                        <table style="width:100%;border:0px;border-spacing:0px 14px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                            <tbody>
+                            <tr>
+                                <td style="padding:0px;width:24%;vertical-align:top;color:#666;white-space:nowrap;">Sep. 2025 – Present</td>
+                                <td style="padding:0px;width:76%;vertical-align:top;">
+                                    <strong>Lecturer</strong><br>
+                                    <a href="https://police.dongguk.edu/main">Department of Police Administration</a>, Dongguk University, Seoul, Korea
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding:0px;width:24%;vertical-align:top;color:#666;white-space:nowrap;">Mar. 2023 – Aug. 2025</td>
+                                <td style="padding:0px;width:76%;vertical-align:top;">
+                                    <strong>Research Assistant</strong><br>
+                                    <a href="https://cs.dongguk.edu/main">Department of Computer Science and Artificial Intelligence</a>, Dongguk University, Seoul, Korea
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- Publications Header -->
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody>
+                <tr>
+                    <td style="padding:16px;width:100%;vertical-align:middle">
+                        <h2>Publications</h2>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- Publications List -->
+            <table style="width:100%;border:0px;border-spacing:0px 0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody>
+
+                <!-- Ongoing Work -->
+                <tr>
+                    <td colspan="2" style="padding:0px 0px 4px 16px;width:100%;vertical-align:middle">
+                        <h3>Ongoing Work</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="padding:8px 16px;width:100%;vertical-align:middle">
+                        <span class="papertitle">Adaptive Horizontal Autoscaling using Predictive Uncertainty on Cloud-native Computing</span><br>
+                        <a href="https://scholar.google.co.kr/citations?user=jNqR0jMAAAAJ"><strong>Byeonghui Jeong</strong></a>,
+                        <a href="https://scholar.google.co.kr/citations?user=UUuCcz4AAAAJ">Jueun Jeon</a>,
+                        <a href="https://scholar.google.co.kr/citations?hl=ko&user=3HBZickAAAAJ">Young-Sik Jeong</a><br>
+                        <em>Submitted</em>, Jun. 2026.
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="padding:8px 16px;width:100%;vertical-align:middle">
+                        <span class="papertitle">Multi-level Burst-aware Container Autoscaling for Efficient Cloud-native Computing</span><br>
+                        <a href="https://scholar.google.co.kr/citations?user=GPD8lyYAAAAJ">Subin Jeong</a>,
+                        <a href="https://scholar.google.co.kr/citations?user=UUuCcz4AAAAJ">Jueun Jeon</a>,
+                        <a href="https://scholar.google.co.kr/citations?user=jNqR0jMAAAAJ"><strong>Byeonghui Jeong</strong></a>,
+                        <a href="https://scholar.google.co.kr/citations?hl=ko&user=3HBZickAAAAJ">Young-Sik Jeong</a><br>
+                        <em>Submitted</em>, Mar. 2026.
+                    </td>
+                </tr>
+
+                <!-- International Journal -->
+                <tr>
+                    <td colspan="2" style="padding:16px 16px 4px 16px;width:100%;vertical-align:middle">
+                        <h3>International Journal</h3>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="padding:16px;width:20%;vertical-align:middle">
+                        <img src="images/2611_HCIS.jpg" class="paper-image" alt="paper thumbnail">
+                    </td>
+                    <td style="padding:8px;width:80%;vertical-align:middle">
+                        <span class="papertitle">Uncertainty-aware Proactive Autoscaling for Containerized Microservices on Cloud-native Computing</span><br>
+                        Yongdeok Jeon,
+                        <a href="https://scholar.google.co.kr/citations?user=jNqR0jMAAAAJ"><strong>Byeonghui Jeong</strong></a>,
+                        <a href="https://scholar.google.co.kr/citations?user=NxknNdQAAAAJ">Seungyeon Baek</a>,
+                        <a href="https://scholar.google.co.kr/citations?hl=ko&user=3HBZickAAAAJ">Young-Sik Jeong</a><br>
+                        <em>Human-centric Computing and Information Sciences</em>, Accepted, Apr. 2026.<br>
+                        <p></p>
+                        <p class="paper-summary">
+                            PUPA addresses workload uncertainty in proactive autoscaling by using adaptive prediction intervals, improving the stability–efficiency trade-off of containerized microservices under nonstationary cloud-native workloads.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding:16px;width:20%;vertical-align:middle">
+                        <img src="images/2602_JSC.jpg" class="paper-image" alt="paper thumbnail">
+                    </td>
+                    <td style="padding:8px;width:80%;vertical-align:middle">
+                        <span class="papertitle">Evaluation of engagement in online learning: Insights based on human factor analysis</span><br>
+                        <a href="https://scholar.google.co.kr/citations?user=MSBo_-0AAAAJ">Sanga Park</a>*,
+                        <a href="https://scholar.google.co.kr/citations?user=jNqR0jMAAAAJ"><strong>Byeonghui Jeong</strong></a>*,
+                        <a href="https://scholar.google.co.kr/citations?user=Ow3kj6wAAAAJ">Wookho Son</a>,
+                        <a href="https://scholar.google.co.kr/citations?user=CCzI04MAAAAJ">Chul Lee</a>**,
+                        <a href="https://scholar.google.co.kr/citations?hl=ko&user=3HBZickAAAAJ">Young-Sik Jeong</a>**<br>
+                        <em>Journal of Supercomputing</em>, vol. 82, no. 147, pp. 1-31, Feb. 2026.<br>
+                        <a href="https://doi.org/10.1007/s11227-026-08298-8">paper</a>
+                        <p></p>
+                        <p class="paper-summary">
+                            The engagement evaluation framework analyzes eye gaze, blinks, facial expressions, and facial landmarks to identify human factors that affect learner engagement in online learning environments.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding:16px;width:20%;vertical-align:middle">
+                        <img src="images/2512_HCIS.jpg" class="paper-image" alt="paper thumbnail">
+                    </td>
+                    <td style="padding:8px;width:80%;vertical-align:middle">
+                        <span class="papertitle">Combined Autoscaling and Offloading for Efficient Resource Management in Fog Computing</span><br>
+                        <a href="https://scholar.google.co.kr/citations?user=GPD8lyYAAAAJ">Subin Jeong</a>*,
+                        Eun-Ha Song*,
+                        <a href="https://scholar.google.co.kr/citations?user=jNqR0jMAAAAJ"><strong>Byeonghui Jeong</strong></a>,
+                        <a href="https://scholar.google.co.kr/citations?hl=ko&user=3HBZickAAAAJ">Young-Sik Jeong</a><br>
+                        <em>Human-centric Computing and Information Sciences</em>, vol. 15, no. 68, pp. 1-18, Dec. 2025.<br>
+                        <a href="https://doi.org/10.22967/HCIS.2025.15.068">paper</a>
+                        <p></p>
+                        <p class="paper-summary">
+                            EProRM combines proactive autoscaling and computation offloading to improve resource efficiency and service continuity in resource-limited fog computing environments.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding:16px;width:20%;vertical-align:middle">
+                        <img src="images/2511_CSR.jpg" class="paper-image" alt="paper thumbnail">
+                    </td>
+                    <td style="padding:8px;width:80%;vertical-align:middle">
+                        <span class="papertitle">Autoscaling Techniques in Cloud-native Computing: A Comprehensive Survey</span><br>
+                        <a href="https://scholar.google.co.kr/citations?user=jNqR0jMAAAAJ"><strong>Byeonghui Jeong</strong></a>,
+                        <a href="https://scholar.google.co.kr/citations?hl=ko&user=3HBZickAAAAJ">Young-Sik Jeong</a><br>
+                        <em>Computer Science Review</em>, vol. 58, pp. 1-26, Nov. 2025.<br>
+                        <a href="https://doi.org/10.1016/j.cosrev.2025.100791">paper</a>
+                        <p></p>
+                        <p class="paper-summary">
+                            This survey provides a structured review of cloud-native autoscaling techniques, covering scaling algorithms, mechanisms, evaluation practices, security threats, mitigation strategies, and open research challenges.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding:16px;width:20%;vertical-align:middle">
+                        <img src="images/2510_CMES.jpg" class="paper-image" alt="paper thumbnail">
+                    </td>
+                    <td style="padding:8px;width:80%;vertical-align:middle">
+                        <span class="papertitle">Hybrid Meta-Heuristic Feature Selection Model for Network Traffic-based Intrusion Detection in AIoT</span><br>
+                        <a href="https://scholar.google.co.kr/citations?user=NxknNdQAAAAJ">Seungyeon Baek</a>*,
+                        <a href="https://scholar.google.co.kr/citations?user=UUuCcz4AAAAJ">Jueun Jeon</a>*,
+                        <a href="https://scholar.google.co.kr/citations?user=jNqR0jMAAAAJ"><strong>Byeonghui Jeong</strong></a>,
+                        <a href="https://scholar.google.co.kr/citations?hl=ko&user=3HBZickAAAAJ">Young-Sik Jeong</a><br>
+                        <em>Computer Modeling in Engineering &amp; Sciences</em>, vol. 145, no. 1, pp. 1213-1236, Oct. 2025.<br>
+                        <a href="https://doi.org/10.32604/cmes.2025.070679">paper</a>
+                        <p></p>
+                        <p class="paper-summary">
+                            HyMNeT improves AIoT intrusion detection by selecting compact multivariate traffic features through mutual information, maximal information coefficient analysis, and evolutionary threshold optimization.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding:16px;width:20%;vertical-align:middle">
+                        <img src="images/2510_HCIS.jpg" class="paper-image" alt="paper thumbnail">
+                    </td>
+                    <td style="padding:8px;width:80%;vertical-align:middle">
+                        <span class="papertitle">Enhanced Adversarial Defense Model with Vector Compression and Ensemble Learning</span><br>
+                        <a href="https://scholar.google.co.kr/citations?user=NxknNdQAAAAJ">Seungyeon Baek</a>,
+                        <a href="https://scholar.google.co.kr/citations?user=jNqR0jMAAAAJ"><strong>Byeonghui Jeong</strong></a>,
+                        <a href="https://scholar.google.co.kr/citations?user=UUuCcz4AAAAJ">Jueun Jeon</a>,
+                        <a href="https://scholar.google.co.kr/citations?hl=ko&user=3HBZickAAAAJ">Young-Sik Jeong</a><br>
+                        <em>Human-centric Computing and Information Sciences</em>, vol. 15, no. 56, pp. 1-14, Oct. 2025.<br>
+                        <a href="https://doi.org/10.22967/HCIS.2025.15.056">paper</a>
+                        <p></p>
+                        <p class="paper-summary">
+                            VeCoEL enhances adversarial malware defense by compressing high-dimensional hybrid-analysis features and applying stacking ensemble learning to preserve sequential semantics while reducing perturbation effects.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding:16px;width:20%;vertical-align:middle">
+                        <img src="images/2505_HCIS.jpg" class="paper-image" alt="paper thumbnail">
+                    </td>
+                    <td style="padding:8px;width:80%;vertical-align:middle">
+                        <span class="papertitle">Dynamic Resource Management Scheme for Digital Twin on Cloud-native Computing</span><br>
+                        Gi Tae Kim,
+                        <a href="https://scholar.google.co.kr/citations?user=jNqR0jMAAAAJ"><strong>Byeonghui Jeong</strong></a>,
+                        <a href="https://scholar.google.co.kr/citations?hl=ko&user=3HBZickAAAAJ">Young-Sik Jeong</a><br>
+                        <em>Human-centric Computing and Information Sciences</em>, vol. 15, no. 26, pp. 1-16, May 2025.<br>
+                        <a href="https://doi.org/10.22967/HCIS.2025.15.026">paper</a>
+                        <p></p>
+                        <p class="paper-summary">
+                            DRMS manages digital twin workloads by dynamically selecting reactive or proactive autoscaling mechanisms according to LightTS prediction accuracy, improving resource efficiency and service continuity.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding:16px;width:20%;vertical-align:middle">
+                        <img src="images/2502_TSC.jpg" class="paper-image" alt="paper thumbnail">
+                    </td>
+                    <td style="padding:8px;width:80%;vertical-align:middle">
+                        <span class="papertitle">ARAScaler: Adaptive Resource Autoscaling Scheme using ETimeMixer for Efficient Cloud-native Computing</span><br>
+                        <a href="https://scholar.google.co.kr/citations?user=jNqR0jMAAAAJ"><strong>Byeonghui Jeong</strong></a>,
+                        <a href="https://scholar.google.co.kr/citations?hl=ko&user=3HBZickAAAAJ">Young-Sik Jeong</a><br>
+                        <em>IEEE Transactions on Services Computing</em>, vol. 18, no. 1, pp. 72-84, Feb. 2025.<br>
+                        <a href="https://doi.org/10.1109/TSC.2024.3522815">paper</a>
+                        <p></p>
+                        <p class="paper-summary">
+                            ARAScaler predicts future workloads with ETimeMixer and segments them into burst, nonburst, dynamic, and static states to reduce overload, scaling oscillation, and unnecessary scaling events.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding:16px;width:20%;vertical-align:middle">
+                        <img src="images/2502_ES.jpg" class="paper-image" alt="paper thumbnail">
+                    </td>
+                    <td style="padding:8px;width:80%;vertical-align:middle">
+                        <span class="papertitle">TMaD: Three-tier malware detection using multi-view feature for secure convergence ICT environments</span><br>
+                        <a href="https://scholar.google.co.kr/citations?user=UUuCcz4AAAAJ">Jueun Jeon</a>,
+                        <a href="https://scholar.google.co.kr/citations?user=jNqR0jMAAAAJ"><strong>Byeonghui Jeong</strong></a>,
+                        <a href="https://scholar.google.co.kr/citations?user=NxknNdQAAAAJ">Seungyeon Baek</a>,
+                        <a href="https://scholar.google.co.kr/citations?hl=ko&user=3HBZickAAAAJ">Young-Sik Jeong</a> <br>
+                        <em>Expert Systems</em>, vol. 42, no. 2, pp. 1-14, Feb. 2025.<br>
+                        <a href="https://doi.org/10.1111/exsy.13684">paper</a>
+                        <p></p>
+                        <p class="paper-summary">
+                            TMaD detects variant and obfuscated malware through a cloud–fog–edge collaborative architecture that combines signature-based detection, static analysis, and dynamic analysis of executable files.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding:16px;width:20%;vertical-align:middle">
+                        <img src="images/2411_HCIS.jpg" class="paper-image" alt="paper thumbnail">
+                    </td>
+                    <td style="padding:8px;width:80%;vertical-align:middle">
+                        <span class="papertitle">Burst-Aware Horizontal Autoscaling Based on Deep Learning for Stable Microservices</span><br>
+                        Jin Park,
+                        <a href="https://scholar.google.co.kr/citations?user=jNqR0jMAAAAJ"><strong>Byeonghui Jeong</strong></a>,
+                        <a href="https://scholar.google.co.kr/citations?user=UUuCcz4AAAAJ">Jueun Jeon</a>,
+                        <a href="https://scholar.google.co.kr/citations?hl=ko&user=3HBZickAAAAJ">Young-Sik Jeong</a><br>
+                        <em>Human-centric Computing and Information Sciences</em>, vol. 14, no. 67, pp. 1-15, Nov. 2024.<br>
+                        <a href="https://doi.org/10.22967/HCIS.2024.14.067">paper</a>
+                        <p></p>
+                        <p class="paper-summary">
+                            BHAS predicts future resource usage and distinguishes burst from non-burst states to stabilize horizontal autoscaling under irregular workloads.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding:16px;width:20%;vertical-align:middle">
+                        <img src="images/2407_HCIS.jpg" class="paper-image" alt="paper thumbnail">
+                    </td>
+                    <td style="padding:8px;width:80%;vertical-align:middle">
+                        <span class="papertitle">PreVA: Predictive Vertical Autoscaler using Multi Bi-GRU for Sustainable Cloud-Native Computing</span><br>
+                        <a href="https://scholar.google.co.kr/citations?user=UUuCcz4AAAAJ">Jueun Jeon</a>*,
+                        <a href="https://scholar.google.co.kr/citations?user=jNqR0jMAAAAJ"><strong>Byeonghui Jeong</strong></a>*,
+                        <a href="https://scholar.google.co.kr/citations?hl=ko&user=3HBZickAAAAJ">Young-Sik Jeong</a><br>
+                        <em>Human-centric Computing and Information Sciences</em>, vol. 14, no. 41, pp. 1-17, Jul. 2024.<br>
+                        <a href="https://doi.org/10.22967/HCIS.2024.14.041">paper</a>
+                        <p></p>
+                        <p class="paper-summary">
+                            PreVA forecasts future CPU and memory demand with Multi Bi-GRU and applies rolling updates to resize container resources while maintaining sustainable vertical autoscaling.
+                        </p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="padding:16px;width:20%;vertical-align:middle">
+                        <img src="images/2405_Access.jpg" class="paper-image" alt="paper thumbnail">
+                    </td>
+                    <td style="padding:8px;width:80%;vertical-align:middle">
+                        <span class="papertitle">Efficient Container Scheduling with Hybrid Deep Learning Model for Improved Service Reliability in Cloud Computing</span><br>
+                        <a href="https://scholar.google.co.kr/citations?user=UUuCcz4AAAAJ">Jueun Jeon</a>*,
+                        <a href="https://scholar.google.co.kr/citations?user=Mk9obXIAAAAJ">Sihyun Park</a>*,
+                        <a href="https://scholar.google.co.kr/citations?user=jNqR0jMAAAAJ"><strong>Byeonghui Jeong</strong></a>,
+                        <a href="https://scholar.google.co.kr/citations?hl=ko&user=3HBZickAAAAJ">Young-Sik Jeong</a><br>
+                        <em>IEEE Access</em>, vol. 12, pp. 65166-65177, May 2024.<br>
+                        <a href="https://doi.org/10.1109/ACCESS.2024.3396652">paper</a>
+                        <p></p>
+                        <p class="paper-summary">
+                            FoRES predicts future CPU and memory usage with DeHyFo and applies the SERU scoring function to reduce idle resources and node overload during container scheduling.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding:16px;width:20%;vertical-align:middle">
+                        <img src="images/2402_TCE.jpg" class="paper-image" alt="paper thumbnail">
+                    </td>
+                    <td style="padding:8px;width:80%;vertical-align:middle">
+                        <span class="papertitle">Intelligent Resource Scaling for Container-Based Digital Twin Simulation of Consumer Electronics</span><br>
+                        <a href="https://scholar.google.co.kr/citations?user=UUuCcz4AAAAJ">Jueun Jeon</a>,
+                        <a href="https://scholar.google.co.kr/citations?user=jNqR0jMAAAAJ"><strong>Byeonghui Jeong</strong></a>,
+                        <a href="https://scholar.google.co.kr/citations?hl=ko&user=3HBZickAAAAJ">Young-Sik Jeong</a><br>
+                        <em>IEEE Transactions on Consumer Electronics</em>, vol. 70, no. 1, pp. 3131-3140, Feb. 2024.<br>
+                        <a href="https://doi.org/10.1109/TCE.2023.3320174">paper</a>
+                        <p></p>
+                        <p class="paper-summary">
+                            IReS monitors container workloads and predicts future computing requirements with DLinear to calculate replica counts for efficient digital twin simulation in cloud environments.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding:16px;width:20%;vertical-align:middle">
+                        <img src="images/2401_TIFS.jpg" class="paper-image" alt="paper thumbnail">
+                    </td>
+                    <td style="padding:8px;width:80%;vertical-align:middle">
+                        <span class="papertitle">Static Multi Feature-Based Malware Detection Using Multi SPP-net in Smart IoT Environments</span><br>
+                        <a href="https://scholar.google.co.kr/citations?user=UUuCcz4AAAAJ">Jueun Jeon</a>,
+                        <a href="https://scholar.google.co.kr/citations?user=jNqR0jMAAAAJ"><strong>Byeonghui Jeong</strong></a>,
+                        <a href="https://scholar.google.co.kr/citations?user=NxknNdQAAAAJ">Seungyeon Baek</a>,
+                        <a href="https://scholar.google.co.kr/citations?hl=ko&user=3HBZickAAAAJ">Young-Sik Jeong</a><br>
+                        <em>IEEE Transactions on Information Forensics and Security</em>, vol. 19, pp. 2487-2500, Jan. 2024.<br>
+                        <a href="https://doi.org/10.1109/TIFS.2024.3350379">paper</a>
+                        <p></p>
+                        <p class="paper-summary">
+                            Mal3S extracts static malware features, converts them into multi-view images, and trains Multi-SPP-Net to detect known, variant, and transformed malware in Smart IoT environments.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding:16px;width:20%;vertical-align:middle">
+                        <img src="images/2312_TCC.jpg" class="paper-image" alt="paper thumbnail">
+                    </td>
+                    <td style="padding:8px;width:80%;vertical-align:middle">
+                        <span class="papertitle">Proactive Resource Autoscaling Scheme based on SCINet for High-performance Cloud Computing</span><br>
+                        <a href="https://scholar.google.co.kr/citations?user=jNqR0jMAAAAJ"><strong>Byeonghui Jeong</strong></a>,
+                        <a href="https://scholar.google.co.kr/citations?user=UUuCcz4AAAAJ">Jueun Jeon</a>,
+                        <a href="https://scholar.google.co.kr/citations?hl=ko&user=3HBZickAAAAJ">Young-Sik Jeong</a><br>
+                        <em>IEEE Transactions on Cloud Computing</em>, vol. 11, no. 4, pp. 3497-3509, Dec. 2023.<br>
+                        <a href="https://doi.org/10.1109/TCC.2023.3292378">paper</a>
+                        <p></p>
+                        <p class="paper-summary">
+                            HiPerRM forecasts future CPU and memory usage with SCINet and RevIN, then coordinates vertical and horizontal pod autoscaling to improve resource efficiency and reduce overload.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding:16px;width:20%;vertical-align:middle">
+                        <img src="images/2307_CS.jpg" class="paper-image" alt="paper thumbnail">
+                    </td>
+                    <td style="padding:8px;width:80%;vertical-align:middle">
+                        <span class="papertitle">Early Prediction of Ransomware API Calls Behaviour based on GRU-TCN in Healthcare IoT</span><br>
+                        <a href="https://scholar.google.co.kr/citations?user=UUuCcz4AAAAJ">Jueun Jeon</a>*,
+                        <a href="https://scholar.google.co.kr/citations?user=NxknNdQAAAAJ">Seungyeon Baek</a>*,
+                        <a href="https://scholar.google.co.kr/citations?user=jNqR0jMAAAAJ"><strong>Byeonghui Jeong</strong></a>,
+                        <a href="https://scholar.google.co.kr/citations?hl=ko&user=3HBZickAAAAJ">Young-Sik Jeong</a><br>
+                        <em>Connection Science</em>, vol. 35, no. 1, pp. 1-15, Jul. 2023.<br>
+                        <a href="https://doi.org/10.1080/09540091.2023.2233716">paper</a>
+                        <p></p>
+                        <p class="paper-summary">
+                            EPS-Ran analyzes short-term opcode and API-call sequences with a Bi-GRU and TCN hybrid model to predict future ransomware behavior during behavioral analysis.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding:16px;width:20%;vertical-align:middle">
+                        <img src="images/2302_Neurocom.jpg" class="paper-image" alt="paper thumbnail">
+                    </td>
+                    <td style="padding:8px;width:80%;vertical-align:middle">
+                        <span class="papertitle">Stable and efficient resource management using deep neural network on cloud computing</span><br>
+                        <a href="https://scholar.google.co.kr/citations?user=jNqR0jMAAAAJ"><strong>Byeonghui Jeong</strong></a>,
+                        <a href="https://scholar.google.co.kr/citations?user=NxknNdQAAAAJ">Seungyeon Baek</a>,
+                        <a href="https://scholar.google.co.kr/citations?user=Mk9obXIAAAAJ">Sihyun Park</a>,
+                        <a href="https://scholar.google.co.kr/citations?user=UUuCcz4AAAAJ">Jueun Jeon</a>,
+                        <a href="https://scholar.google.co.kr/citations?hl=ko&user=3HBZickAAAAJ">Young-Sik Jeong</a><br>
+                        <em>Neurocomputing</em>, vol. 521, pp. 99-112, Feb. 2023.<br>
+                        <a href="https://doi.org/10.1016/j.neucom.2022.11.089">paper</a>
+                        <p></p>
+                        <p class="paper-summary">
+                            ProHPA forecasts CPU and memory usage with attention-based Bi-LSTM and combines vertical and horizontal pod autoscaling to reduce resource over-allocation and prevent overload.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding:16px;width:20%;vertical-align:middle">
+                        <img src="images/2207_TII.jpg" class="paper-image" alt="paper thumbnail">
+                    </td>
+                    <td style="padding:8px;width:80%;vertical-align:middle">
+                        <span class="papertitle">Hybrid Malware Detection Based on Bi-LSTM and SPP-Net for Smart IoT</span><br>
+                        <a href="https://scholar.google.co.kr/citations?user=UUuCcz4AAAAJ">Jueun Jeon</a>,
+                        <a href="https://scholar.google.co.kr/citations?user=jNqR0jMAAAAJ"><strong>Byeonghui Jeong</strong></a>,
+                        <a href="https://scholar.google.co.kr/citations?user=NxknNdQAAAAJ">Seungyeon Baek</a>,
+                        <a href="https://scholar.google.co.kr/citations?hl=ko&user=3HBZickAAAAJ">Young-Sik Jeong</a><br>
+                        <em>IEEE Transactions on Industrial Informatics</em>, vol. 18, no. 7, pp. 4830-4837, Jul. 2022.<br>
+                        <a href="https://doi.org/10.1109/TII.2021.3119778">paper</a>
+                        <p></p>
+                        <p class="paper-summary">
+                            HyMalD combines static opcode analysis and dynamic API-call analysis with Bi-LSTM and SPP-Net to detect and classify obfuscated IoT malware.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding:16px;width:20%;vertical-align:middle">
+                        <img src="images/2106_HCIS.jpg" class="paper-image" alt="paper thumbnail">
+                    </td>
+                    <td style="padding:8px;width:80%;vertical-align:middle">
+                        <span class="papertitle">Two-Stage Hybrid Malware Detection Using Deep Learning</span><br>
+                        <a href="https://scholar.google.co.kr/citations?user=NxknNdQAAAAJ">Seungyeon Baek</a>,
+                        <a href="https://scholar.google.co.kr/citations?user=UUuCcz4AAAAJ">Jueun Jeon</a>,
+                        <a href="https://scholar.google.co.kr/citations?user=jNqR0jMAAAAJ"><strong>Byeonghui Jeong</strong></a>,
+                        <a href="https://scholar.google.co.kr/citations?hl=ko&user=3HBZickAAAAJ">Young-Sik Jeong</a><br>
+                        <em>Human-centric Computing and Information Sciences</em>, vol. 11, no. 27, pp. 1-14, Jun. 2021.<br>
+                        <a href="https://doi.org/10.22967/HCIS.2021.11.027">paper</a>
+                        <p></p>
+                        <p class="paper-summary">
+                            2-MaD protects IoT devices in smart-city environments through a two-stage hybrid malware detection scheme that combines static and dynamic analysis with deep learning.
+                        </p>
+                    </td>
+                </tr>
+
+                <!-- Domestic Journal -->
+                <tr>
+                    <td colspan="2" style="padding:16px 16px 4px 16px;width:100%;vertical-align:middle">
+                        <h3>Domestic Journal</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="padding:8px 16px;width:100%;vertical-align:middle">
+                        <span class="papertitle">Development of a Personal Clothing Recommendation System that Reflects Individual Temperature Sensitivity</span><br>
+                        <a href="https://scholar.google.co.kr/citations?user=jNqR0jMAAAAJ"><strong>Byeonghui Jeong</strong></a>,
+                        Woo-Seok Kim, Sang-Yong Lee<br>
+                        <em>Journal of Digital Convergence</em>, vol. 19, no. 2, pp. 357-363, Feb. 2021.<br>
+                        <a href="https://doi.org/10.14400/JDC.2021.19.2.357">paper</a>
+                    </td>
+                </tr>
+
+                <!-- Conference -->
+                <tr>
+                    <td colspan="2" style="padding:16px 16px 4px 16px;width:100%;vertical-align:middle">
+                        <h3>Conference</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="padding:8px 16px;width:100%;vertical-align:middle">
+                        <span class="papertitle">Predictive Horizontal Autoscaling Based on Uncertainty Quantification for Robust Microservices</span><br>
+                        <a href="https://scholar.google.co.kr/citations?user=jNqR0jMAAAAJ"><strong>Byeonghui Jeong</strong></a>,
+                        <a href="https://scholar.google.co.kr/citations?user=NxknNdQAAAAJ">Seungyeon Baek</a>,
+                        Chaelin Son,
+                        <a href="https://scholar.google.co.kr/citations?hl=ko&user=3HBZickAAAAJ">Young-Sik Jeong</a><br>
+                        In <em>Proceedings of the 20th International Conference on Multimedia and Ubiquitous Engineering</em>, Qingdao, China, Apr. 2026.<br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="padding:8px 16px;width:100%;vertical-align:middle">
+                        <span class="papertitle">Hybrid Autoscaling Approach for Continuous Video Stream Processing on Serverless Computing</span><br>
+                        Minsuk Jung,
+                        <a href="https://scholar.google.co.kr/citations?user=jNqR0jMAAAAJ"><strong>Byeonghui Jeong</strong></a>,
+                        <a href="https://scholar.google.co.kr/citations?user=NxknNdQAAAAJ">Seungyeon Baek</a>,
+                        <a href="https://scholar.google.co.kr/citations?hl=ko&user=3HBZickAAAAJ">Young-Sik Jeong</a><br>
+                        In <em>Proceedings of the 17th International Conference on Computer Science and its Applications</em>, Phu Quoc, Vietnam, Dec. 2025.<br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="padding:8px 16px;width:100%;vertical-align:middle">
+                        <span class="papertitle">Proactive Multi-Autoscaler with Anomaly Detection for Real-Time Streaming Environments</span><br>
+                        <a href="https://scholar.google.co.kr/citations?user=GPD8lyYAAAAJ">Subin Jeong</a>,
+                        <a href="https://scholar.google.co.kr/citations?user=jNqR0jMAAAAJ"><strong>Byeonghui Jeong</strong></a>,
+                        <a href="https://scholar.google.co.kr/citations?user=NxknNdQAAAAJ">Seungyeon Baek</a>,
+                        <a href="https://scholar.google.co.kr/citations?hl=ko&user=3HBZickAAAAJ">Young-Sik Jeong</a><br>
+                        In <em>Proceedings of the 17th International Conference on Computer Science and its Applications</em>, Phu Quoc, Vietnam, Dec. 2025.<br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="padding:8px 16px;width:100%;vertical-align:middle">
+                        <span class="papertitle">Proactive Resource Management Scheme for High-performance Fog Computing</span><br>
+                        <a href="https://scholar.google.co.kr/citations?user=GPD8lyYAAAAJ">Subin Jeong</a>,
+                        <a href="https://scholar.google.co.kr/citations?user=jNqR0jMAAAAJ"><strong>Byeonghui Jeong</strong></a>,
+                        <a href="https://scholar.google.co.kr/citations?hl=ko&user=3HBZickAAAAJ">Young-Sik Jeong</a><br>
+                        In <em>Proceedings of the 16th International Conference on Computer Science and its Applications</em>, Pattaya, Thailand, Dec. 2024.<br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="padding:8px 16px;width:100%;vertical-align:middle">
+                        <span class="papertitle">Ensemble Malware Classifier with Feature Squeezing based on Arithmetic Coding</span><br>
+                        <a href="https://scholar.google.co.kr/citations?user=NxknNdQAAAAJ">Seungyeon Baek</a>,
+                        <a href="https://scholar.google.co.kr/citations?user=jNqR0jMAAAAJ"><strong>Byeonghui Jeong</strong></a>,
+                        <a href="https://scholar.google.co.kr/citations?user=UUuCcz4AAAAJ">Jueun Jeon</a>,
+                        <a href="https://scholar.google.co.kr/citations?hl=ko&user=3HBZickAAAAJ">Young-Sik Jeong</a><br>
+                        In <em>Proceedings of the 2024 International Conference on Future Information Technology, applications and services</em>, Seoul, Korea, Oct.-Nov. 2024.<br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="padding:8px 16px;width:100%;vertical-align:middle">
+                        <span class="papertitle">Intelligent Resource Management Scheme for Efficient Cloud-based Digital Twinning <strong>(Best Paper Award)</strong></span><br>
+                        <a href="https://scholar.google.co.kr/citations?user=jNqR0jMAAAAJ"><strong>Byeonghui Jeong</strong></a>,
+                        <a href="https://scholar.google.co.kr/citations?user=UUuCcz4AAAAJ">Jueun Jeon</a>,
+                        <a href="https://scholar.google.co.kr/citations?hl=ko&user=3HBZickAAAAJ">Young-Sik Jeong</a><br>
+                        In <em>Proceedings of the 18th International Conference on Multimedia and Ubiquitous Engineering</em>, Chongqing, China, Apr. 2024.<br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="padding:8px 16px;width:100%;vertical-align:middle">
+                        <span class="papertitle">Proactive Container Autoscaling using DEVS for Efficient Cloud-Native Computing</span><br>
+                        <a href="https://scholar.google.co.kr/citations?user=jNqR0jMAAAAJ"><strong>Byeonghui Jeong</strong></a>,
+                        <a href="https://scholar.google.co.kr/citations?user=UUuCcz4AAAAJ">Jueun Jeon</a>,
+                        <a href="https://scholar.google.co.kr/citations?hl=ko&user=3HBZickAAAAJ">Young-Sik Jeong</a><br>
+                        In <em>Proceedings of the 2024 World Congress on Information Technology Applications and Services</em>, Jeju, Korea, Feb. 2024.<br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="padding:8px 16px;width:100%;vertical-align:middle">
+                        <span class="papertitle">3-tier Malware Detection on Cloud Computing</span><br>
+                        <a href="https://scholar.google.co.kr/citations?user=UUuCcz4AAAAJ">Jueun Jeon</a>,
+                        <a href="https://scholar.google.co.kr/citations?user=jNqR0jMAAAAJ"><strong>Byeonghui Jeong</strong></a>,
+                        <a href="https://scholar.google.co.kr/citations?hl=ko&user=3HBZickAAAAJ">Young-Sik Jeong</a><br>
+                        In <em>Proceedings of the 15th International Conference on Computer Science and its Applications</em>, Nha Trang, Vietnam, Dec. 2023.<br>
+                        <a href="https://doi.org/10.1007/978-981-97-2447-5_1">paper</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="padding:8px 16px;width:100%;vertical-align:middle">
+                        <span class="papertitle">CoHA: Context-optimized Hybrid Autoscaling Scheme based on Reinforcement Learning and Deep Learning</span><br>
+                        <a href="https://scholar.google.co.kr/citations?user=jNqR0jMAAAAJ"><strong>Byeonghui Jeong</strong></a>,
+                        <a href="https://scholar.google.co.kr/citations?user=UUuCcz4AAAAJ">Jueun Jeon</a>,
+                        <a href="https://scholar.google.co.kr/citations?hl=ko&user=3HBZickAAAAJ">Young-Sik Jeong</a><br>
+                        In <em>Proceedings of the 7th International Conference on Big data, IoT, and Cloud Computing</em>, Jeju, Korea, Aug. 2023.
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="padding:8px 16px;width:100%;vertical-align:middle">
+                        <span class="papertitle">Efficient Container Management Scheme based on Deep Learning Model</span><br>
+                        <a href="https://scholar.google.co.kr/citations?user=jNqR0jMAAAAJ"><strong>Byeonghui Jeong</strong></a>,
+                        <a href="https://scholar.google.co.kr/citations?user=UUuCcz4AAAAJ">Jueun Jeon</a>,
+                        <a href="https://scholar.google.co.kr/citations?user=NxknNdQAAAAJ">Seungyeon Baek</a>,
+                        <a href="https://scholar.google.co.kr/citations?hl=ko&user=3HBZickAAAAJ">Young-Sik Jeong</a><br>
+                        In <em>Proceedings of the 14th International Conference on Computer Science and its Applications</em>, Vientiane, Laos, Dec. 2022.<br>
+                        <a href="https://doi.org/10.1007/978-981-99-1252-0_81">paper</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="padding:8px 16px;width:100%;vertical-align:middle">
+                        <span class="papertitle">Actual Resource Usage based Container Scheduler for High Resource Utilization</span><br>
+                        <a href="https://scholar.google.co.kr/citations?user=Mk9obXIAAAAJ">Sihyun Park</a>,
+                        <a href="https://scholar.google.co.kr/citations?user=UUuCcz4AAAAJ">Jueun Jeon</a>,
+                        <a href="https://scholar.google.co.kr/citations?user=jNqR0jMAAAAJ"><strong>Byeonghui Jeong</strong></a>,
+                        <a href="https://scholar.google.co.kr/citations?user=wY6n4NMAAAAJ">Kyuwon Park</a>,
+                        <a href="https://scholar.google.co.kr/citations?user=NxknNdQAAAAJ">Seungyeon Baek</a>,
+                        <a href="https://scholar.google.co.kr/citations?hl=ko&user=3HBZickAAAAJ">Young-Sik Jeong</a><br>
+                        In <em>Proceedings of the 14th International Conference on Computer Science and its Applications</em>, Vientiane, Laos, Dec. 2022.<br>
+                        <a href="https://doi.org/10.1007/978-981-99-1252-0_82">paper</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="padding:8px 16px;width:100%;vertical-align:middle">
+                        <span class="papertitle">Ransomware Behavior Prediction with Deep Learning Model</span><br>
+                        <a href="https://scholar.google.co.kr/citations?user=NxknNdQAAAAJ">Seungyeon Baek</a>,
+                        <a href="https://scholar.google.co.kr/citations?user=UUuCcz4AAAAJ">Jueun Jeon</a>,
+                        <a href="https://scholar.google.co.kr/citations?user=jNqR0jMAAAAJ"><strong>Byeonghui Jeong</strong></a>,
+                        <a href="https://scholar.google.co.kr/citations?hl=ko&user=3HBZickAAAAJ">Young-Sik Jeong</a><br>
+                        In <em>Proceedings of the International Conference on Future Information Technology, applications and services</em>, Seoul, Korea, Oct. 2022.<br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="padding:8px 16px;width:100%;vertical-align:middle">
+                        <span class="papertitle">Optimal Scenario Scheduling for Efficient Resource Utilization on Cloud Computing</span><br>
+                        <a href="https://scholar.google.co.kr/citations?user=Mk9obXIAAAAJ">Sihyun Park</a>,
+                        <a href="https://scholar.google.co.kr/citations?user=jNqR0jMAAAAJ"><strong>Byeonghui Jeong</strong></a>,
+                        <a href="https://scholar.google.co.kr/citations?user=UUuCcz4AAAAJ">Jueun Jeon</a>,
+                        <a href="https://scholar.google.co.kr/citations?hl=ko&user=3HBZickAAAAJ">Young-Sik Jeong</a><br>
+                        In <em>Proceedings of the 6th International Conference on Big data, IoT, and Cloud Computing</em>, Jeju, Korea, Aug. 2022.<br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="padding:8px 16px;width:100%;vertical-align:middle">
+                        <span class="papertitle">High Availability Resource Management using Deep Neural Network</span><br>
+                        <a href="https://scholar.google.co.kr/citations?user=jNqR0jMAAAAJ"><strong>Byeonghui Jeong</strong></a>,
+                        <a href="https://scholar.google.co.kr/citations?user=UUuCcz4AAAAJ">Jueun Jeon</a>,
+                        <a href="https://scholar.google.co.kr/citations?user=NxknNdQAAAAJ">Seungyeon Baek</a>,
+                        <a href="https://scholar.google.co.kr/citations?user=wY6n4NMAAAAJ">Kyuwon Park</a>,
+                        <a href="https://scholar.google.co.kr/citations?user=Mk9obXIAAAAJ">Sihyun Park</a>,
+                        <a href="https://scholar.google.co.kr/citations?hl=ko&user=3HBZickAAAAJ">Young-Sik Jeong</a><br>
+                        In <em>Proceedings of the 16th International Conference on Multimedia and Ubiquitous Engineering</em>, Jeju, Korea, Apr. 2022.<br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="padding:8px 16px;width:100%;vertical-align:middle">
+                        <span class="papertitle">Horizontal Pod Autoscaling using Deep learning for Stable Resource Management</span><br>
+                        <a href="https://scholar.google.co.kr/citations?user=jNqR0jMAAAAJ"><strong>Byeonghui Jeong</strong></a>,
+                        <a href="https://scholar.google.co.kr/citations?user=UUuCcz4AAAAJ">Jueun Jeon</a>,
+                        <a href="https://scholar.google.co.kr/citations?user=NxknNdQAAAAJ">Seungyeon Baek</a>,
+                        <a href="https://scholar.google.co.kr/citations?hl=ko&user=3HBZickAAAAJ">Young-Sik Jeong</a><br>
+                        In <em>Proceedings of the 2022 World Congress on Information Technology Applications and Services</em>, Jeju, Korea, Feb. 2022.<br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="padding:8px 16px;width:100%;vertical-align:middle">
+                        <span class="papertitle">Adaptive Vertical Pod Autoscaler for Efficient Cloud Computing Resource Utilization based on Bi-LSTM</span><br>
+                        Seungchul Kim,
+                        <a href="https://scholar.google.co.kr/citations?user=jNqR0jMAAAAJ"><strong>Byeonghui Jeong</strong></a>,
+                        <a href="https://scholar.google.co.kr/citations?user=Mk9obXIAAAAJ">Sihyun Park</a>,
+                        <a href="https://scholar.google.co.kr/citations?user=UUuCcz4AAAAJ">Jueun Jeon</a>,
+                        <a href="https://scholar.google.co.kr/citations?hl=ko&user=3HBZickAAAAJ">Young-Sik Jeong</a><br>
+                        In <em>Proceedings of the 13th International Conference on Computer Science and its Applications</em>, Jeju, Korea, Dec. 2021.<br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="padding:8px 16px;width:100%;vertical-align:middle">
+                        <span class="papertitle">Obfuscated Malware Detection using Multimodal Deep Learning</span><br>
+                        <a href="https://scholar.google.co.kr/citations?user=UUuCcz4AAAAJ">Jueun Jeon</a>,
+                        <a href="https://scholar.google.co.kr/citations?user=NxknNdQAAAAJ">Seungyeon Baek</a>,
+                        <a href="https://scholar.google.co.kr/citations?user=jNqR0jMAAAAJ"><strong>Byeonghui Jeong</strong></a>,
+                        <a href="https://scholar.google.co.kr/citations?hl=ko&user=3HBZickAAAAJ">Young-Sik Jeong</a><br>
+                        In <em>Proceedings of the 5th International Conference on Big data, IoT, and Cloud Computing</em>, Jeju, Korea, Aug. 2021.<br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="padding:8px 16px;width:100%;vertical-align:middle">
+                        <span class="papertitle">Two Stage Malware Detection Method using Hybrid Analysis Feature</span><br>
+                        <a href="https://scholar.google.co.kr/citations?user=NxknNdQAAAAJ">Seungyeon Baek</a>,
+                        <a href="https://scholar.google.co.kr/citations?user=UUuCcz4AAAAJ">Jueun Jeon</a>,
+                        <a href="https://scholar.google.co.kr/citations?user=jNqR0jMAAAAJ"><strong>Byeonghui Jeong</strong></a>,
+                        <a href="https://scholar.google.co.kr/citations?hl=ko&user=3HBZickAAAAJ">Young-Sik Jeong</a><br>
+                        In <em>Proceedings of the 12th International Conference on Computer Science and its Applications</em>, Jeju, Korea, Dec. 2020.<br>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- Patents Header -->
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody>
+                <tr>
+                    <td style="padding:32px 16px 16px 16px;width:100%;vertical-align:middle">
+                        <h2>Patents</h2>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- Patents List -->
+            <table style="width:100%;border:0px;border-spacing:0px 4px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody>
+
+                <tr>
+                    <td style="padding:8px 16px;width:100%;vertical-align:middle">
+                        <span class="papertitle">Method for Malware Detection Based on Vector Compression and Ensemble Learning, and Device for Executing the Same</span><br>
+                        <a href="https://scholar.google.co.kr/citations?hl=ko&user=3HBZickAAAAJ">Young-Sik Jeong</a>,
+                        <a href="https://scholar.google.co.kr/citations?user=NxknNdQAAAAJ">Seungyeon Baek</a>,
+                        <a href="https://scholar.google.co.kr/citations?user=jNqR0jMAAAAJ"><strong>Byeonghui Jeong</strong></a>,
+                        <a href="https://scholar.google.co.kr/citations?user=UUuCcz4AAAAJ">Jueun Jeon</a><br>
+                        10-2025-0080886, 19 Jun. 2025.
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding:8px 16px;width:100%;vertical-align:middle">
+                        <span class="papertitle">Method for Three-Tier Malware Detection Using Multi-View Features and Apparatus for Executing the Same</span><br>
+                        <a href="https://scholar.google.co.kr/citations?hl=ko&user=3HBZickAAAAJ">Young-Sik Jeong</a>,
+                        <a href="https://scholar.google.co.kr/citations?user=UUuCcz4AAAAJ">Jueun Jeon</a>,
+                        <a href="https://scholar.google.co.kr/citations?user=jNqR0jMAAAAJ"><strong>Byeonghui Jeong</strong></a>,
+                        <a href="https://scholar.google.co.kr/citations?user=NxknNdQAAAAJ">Seungyeon Baek</a><br>
+                        10-2025-0080885, 19 Jun. 2025.
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding:8px 16px;width:100%;vertical-align:middle">
+                        <span class="papertitle">Deep Learning-based Resource Scaling Method for Stable Microservices, and a Cloud Computing System</span><br>
+                        <a href="https://scholar.google.co.kr/citations?hl=ko&user=3HBZickAAAAJ">Young-Sik Jeong</a>,
+                        <a href="https://scholar.google.co.kr/citations?user=jNqR0jMAAAAJ"><strong>Byeonghui Jeong</strong></a>,
+                        <a href="https://scholar.google.co.kr/citations?user=UUuCcz4AAAAJ">Jueun Jeon</a><br>
+                        10-2025-0066434, 21 May 2025.
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding:8px 16px;width:100%;vertical-align:middle">
+                        <span class="papertitle">Adaptive Resource Autoscaling Method for Efficient Cloud-native Computing, a System Implementing the Same</span><br>
+                        <a href="https://scholar.google.co.kr/citations?hl=ko&user=3HBZickAAAAJ">Young-Sik Jeong</a>,
+                        <a href="https://scholar.google.co.kr/citations?user=jNqR0jMAAAAJ"><strong>Byeonghui Jeong</strong></a><br>
+                        10-2025-0066433, 21 May 2025.
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding:8px 16px;width:100%;vertical-align:middle">
+                        <span class="papertitle">Dynamic Resource Management Method for Digital Twin Simulation Environments in Cloud-native Computing, a System Implementing the Same, Cloud Server, and User Terminal</span><br>
+                        <a href="https://scholar.google.co.kr/citations?hl=ko&user=3HBZickAAAAJ">Young-Sik Jeong</a>,
+                        <a href="https://scholar.google.co.kr/citations?user=jNqR0jMAAAAJ"><strong>Byeonghui Jeong</strong></a><br>
+                        10-2025-0066432, 21 May 2025.
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding:8px 16px;width:100%;vertical-align:middle">
+                        <span class="papertitle">Method of detecting Malware based on Multi SPP-Net and Apparatus for executing the same</span><br>
+                        <a href="https://scholar.google.co.kr/citations?hl=ko&user=3HBZickAAAAJ">Young-Sik Jeong</a>,
+                        <a href="https://scholar.google.co.kr/citations?user=UUuCcz4AAAAJ">Jueun Jeon</a>,
+                        <a href="https://scholar.google.co.kr/citations?user=jNqR0jMAAAAJ"><strong>Byeonghui Jeong</strong></a><br>
+                        10-2024-0093985, 17 Jul. 2024.
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding:8px 16px;width:100%;vertical-align:middle">
+                        <span class="papertitle">Method of Autoscaling Resource and Cloud-Native Computing System for executing the same</span><br>
+                        <a href="https://scholar.google.co.kr/citations?hl=ko&user=3HBZickAAAAJ">Young-Sik Jeong</a>,
+                        <a href="https://scholar.google.co.kr/citations?user=UUuCcz4AAAAJ">Jueun Jeon</a>,
+                        <a href="https://scholar.google.co.kr/citations?user=jNqR0jMAAAAJ"><strong>Byeonghui Jeong</strong></a><br>
+                        10-2024-0039897, 22 Mar. 2024.
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding:8px 16px;width:100%;vertical-align:middle">
+                        <span class="papertitle">Method of Resource Scaling for Container-based Digital Twin Simulation and System for executing the same</span><br>
+                        <a href="https://scholar.google.co.kr/citations?hl=ko&user=3HBZickAAAAJ">Young-Sik Jeong</a>,
+                        <a href="https://scholar.google.co.kr/citations?user=UUuCcz4AAAAJ">Jueun Jeon</a>,
+                        <a href="https://scholar.google.co.kr/citations?user=jNqR0jMAAAAJ"><strong>Byeonghui Jeong</strong></a><br>
+                        10-2024-0039896, 22 Mar. 2024.
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding:8px 16px;width:100%;vertical-align:middle">
+                        <span class="papertitle">Method of predicting vertical autoscaling and cloud-native computing system for executing the same</span><br>
+                        <a href="https://scholar.google.co.kr/citations?hl=ko&user=3HBZickAAAAJ">Young-Sik Jeong</a>,
+                        <a href="https://scholar.google.co.kr/citations?user=UUuCcz4AAAAJ">Jueun Jeon</a>,
+                        <a href="https://scholar.google.co.kr/citations?user=jNqR0jMAAAAJ"><strong>Byeonghui Jeong</strong></a><br>
+                        10-2024-0039895, 22 Mar. 2024.
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding:8px 16px;width:100%;vertical-align:middle">
+                        <span class="papertitle">Method of predicting Ransomware and Apparatus for executing the same</span><br>
+                        <a href="https://scholar.google.co.kr/citations?hl=ko&user=3HBZickAAAAJ">Young-Sik Jeong</a>,
+                        <a href="https://scholar.google.co.kr/citations?user=UUuCcz4AAAAJ">Jueun Jeon</a>,
+                        <a href="https://scholar.google.co.kr/citations?user=jNqR0jMAAAAJ"><strong>Byeonghui Jeong</strong></a><br>
+                        10-2024-0039894, 22 Mar. 2024.
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding:8px 16px;width:100%;vertical-align:middle">
+                        <span class="papertitle">Clothing recommendation server reflecting user sensitive temperature, and clothing recommendation method using the same</span><br>
+                        <a href="https://scholar.google.co.kr/citations?user=jNqR0jMAAAAJ"><strong>Byeonghui Jeong</strong></a>,
+                        Woo-Seok Kim, Sang-Yong Lee<br>
+                        no. 10-2598151, 31 Oct. 2023.
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- Academic Activities Header -->
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody>
+                <tr>
+                    <td style="padding:16px;width:100%;vertical-align:middle">
+                        <h2>Academic Activities</h2>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- Academic Activities List -->
+            <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody>
+                <tr>
+                    <td style="padding:8px 16px;width:100%;vertical-align:middle">
+                        <span class="papertitle">Reviewer</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding:0px 16px;width:100%;vertical-align:middle">
+                        <table style="width:100%;border:0px;border-spacing:0px 6px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                            <tbody>
+                            <tr>
+                                <td style="width:50%;vertical-align:top;padding-right:12px;">
+                                    IEEE Internet of Things Journal ’25<br>
+                                    IEEE Transactions on Services Computing ’24, ’25<br>
+                                    IEEE Transactions on Neural Networks and Learning Systems ’24<br>
+                                    Computer Science Review ’26<br>
+                                    Expert Systems with Applications ’25<br>
+                                    Journal of Parallel and Distributed Computing ’26<br>
+                                    Computer Communications ’25<br>
+                                    Journal of Systems and Software ’25, ’26<br>
+                                    Journal of Systems Architecture ’25<br>
+                                    Sustainable Computing: Informatics and Systems ’25<br>
+                                    Journal of Big Data ’25
+                                </td>
+                                <td style="width:50%;vertical-align:top;padding-left:12px;">
+                                    Journal of Cloud Computing ’25<br>
+                                    Journal of Grid Computing ’25<br>
+                                    Journal of Supercomputing ’24, ’25<br>
+                                    Cluster Computing ’24, ’25, ’26<br>
+                                    Computing ’26<br>
+                                    EURASIP Journal on Information Security ’24<br>
+                                    Scientific Reports ’25, ’26<br>
+                                    CMC-Computers, Materials &amp; Continua ’25<br>
+                                    International Journal of Information Technology &amp; Decision Making ’24<br>
+                                    Concurrency and Computation: Practice and Experience ’24
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- Technical Skills Header -->
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody>
+                <tr>
+                    <td style="padding:16px;width:100%;vertical-align:middle">
+                        <h2>Technical Skills</h2>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- Technical Skills List -->
+            <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody>
+                <tr>
+                    <td style="padding:8px 16px;width:24%;vertical-align:top;color:#666;white-space:nowrap;">
+                        Programming
+                    </td>
+                    <td style="padding:8px 16px;width:76%;vertical-align:top;">
+                        C/C++, Java, Python, Go
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding:8px 16px;width:24%;vertical-align:top;color:#666;white-space:nowrap;">
+                        Cloud Computing
+                    </td>
+                    <td style="padding:8px 16px;width:76%;vertical-align:top;">
+                        Docker, Kubernetes
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody>
+                <tr>
+                    <td style="padding:0px">
+                        <br>
+                        <p style="text-align:center;font-size:small;">
+                            Design and source code from <a style="font-size:small;" href="https://jonbarron.info">Jon
+                            Barron's website</a>
+                        </p>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<script src="script.js"></script>
+</body>
+</html>
