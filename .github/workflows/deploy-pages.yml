@@ -1,0 +1,87 @@
+name: Deploy homepage
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Prepare website and record update date
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          from datetime import datetime
+          from zoneinfo import ZoneInfo
+          import shutil
+          import subprocess
+
+          site_files = ["index.html", "stylesheet.css", "script.js", "images"]
+          output = Path("_site")
+          output.mkdir()
+
+          for name in site_files:
+              source = Path(name)
+              if source.is_dir():
+                  shutil.copytree(source, output / name)
+              else:
+                  shutil.copy2(source, output / name)
+
+          timestamp = subprocess.check_output(
+              ["git", "log", "-1", "--format=%ct", "--", *site_files],
+              text=True,
+          ).strip()
+
+          if not timestamp:
+              raise SystemExit("No website commit history was found.")
+
+          updated = datetime.fromtimestamp(
+              int(timestamp), ZoneInfo("Asia/Seoul")
+          ).strftime("%Y-%m-%d")
+
+          page = output / "index.html"
+          html = page.read_text(encoding="utf-8")
+          marker = '<time id="last-updated"></time>'
+
+          if html.count(marker) != 1:
+              raise SystemExit("Expected exactly one empty last-updated time element.")
+
+          replacement = (
+              f'<time id="last-updated" datetime="{updated}">{updated}</time>'
+          )
+          page.write_text(html.replace(marker, replacement), encoding="utf-8")
+          print(f"Last updated: {updated} (Asia/Seoul)")
+          PY
+
+      - name: Upload website
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+
+      - name: Deploy website
+        id: deployment
+        uses: actions/deploy-pages@v4

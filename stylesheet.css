@@ -1,3 +1,54 @@
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+  margin: 36px 16px 20px;
+}
+
+.page-footer p,
+.page-footer a {
+  font-size: small;
+}
+
+.page-footer p {
+  margin: 0;
+}
+
+.page-footer .footer-credit {
+  text-align: left;
+}
+
+.page-footer .last-updated {
+  margin-left: auto;
+  text-align: right;
+  color: #555;
+  white-space: nowrap;
+}
+
+.section-count {
+  display: inline-block;
+  margin-left: 6px;
+  font-size: 13px;
+  font-weight: normal;
+  color: #707070;
+  white-space: nowrap;
+}
+
+.author-note {
+  margin: 6px 0 0;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #707070;
+}
+
+.author-note span {
+  display: inline-block;
+  margin-right: 12px;
+  white-space: nowrap;
+}
+
 /* latin-ext */
 @font-face {
   font-family: 'Lato';

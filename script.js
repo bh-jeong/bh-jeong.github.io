@@ -33,3 +33,42 @@ function prevProfilePhoto() {
     currentProfilePhoto = (currentProfilePhoto - 1 + profilePhotos.length) % profilePhotos.length;
     showProfilePhoto(currentProfilePhoto);
 }
+
+function updatePageMetadata() {
+    const formatCount = (count, unit) =>
+        `${count} ${unit}${count === 1 ? "" : "s"}`;
+
+    let publicationTotal = 0;
+
+    document.querySelectorAll("[data-paper-group]").forEach((counter) => {
+        let count = 0;
+        let row = counter.closest("tr").nextElementSibling;
+
+        while (row && !row.querySelector("h3")) {
+            count += row.querySelectorAll(".papertitle").length;
+            row = row.nextElementSibling;
+        }
+
+        counter.textContent = formatCount(count, "paper");
+
+        if (counter.dataset.paperGroup !== "ongoing") {
+            publicationTotal += count;
+        }
+    });
+
+    document.getElementById("publication-total").textContent =
+        formatCount(publicationTotal, "paper");
+
+    const patentTotal = document.querySelectorAll(
+        "#patents-list .papertitle"
+    ).length;
+
+    document.getElementById("patent-total").textContent =
+        formatCount(patentTotal, "patent");
+}
+
+if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", updatePageMetadata);
+} else {
+    updatePageMetadata();
+}
